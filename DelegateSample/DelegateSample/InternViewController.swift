@@ -12,25 +12,30 @@ class InternViewController: UIViewController,BossDelegate {
     
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var choseBtn: UIButton!
+    @IBOutlet weak var chooseButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        chooseButton.layer.cornerRadius = chooseButton.frame.size.height/2
     }
     
     
     @IBAction func chooseBtnTapped(_ sender: Any) {
         let bossVC = storyboard?.instantiateViewController(withIdentifier: "BossViewController") as! BossViewController
         
-//        let bossVC = storyboard?.instantiateViewController(identifier: "BossViewController")
         bossVC.bossDelegate = self
         present(bossVC, animated: true, completion: nil)
     }
     
     func didTapChoise(image: UIImage, name: String, color: UIColor) {
         self.mainImageView.image = image
+        
+        if name == "Luke Skywalker" {
+            nameLabel.textColor = .black
+        }
         self.nameLabel.text = name
-        self.mainImageView.backgroundColor = color
+        
+        view.backgroundColor = color
     }
 
 }

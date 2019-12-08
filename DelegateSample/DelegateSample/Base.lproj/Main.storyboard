@@ -15,14 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1oI-yI-7yA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1oI-yI-7yA">
                                 <rect key="frame" x="10" y="124" width="394" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="394" id="17i-P9-WFK"/>
                                     <constraint firstAttribute="height" constant="180" id="QA1-kX-it7"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVd-c8-uEG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVd-c8-uEG">
                                 <rect key="frame" x="20" y="319" width="374" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="LiE-Pb-6Bf"/>
@@ -61,6 +61,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="chooseButton" destination="tbA-Dy-rHN" id="K2U-ZX-u7m"/>
                         <outlet property="mainImageView" destination="1oI-yI-7yA" id="O5W-1e-YYj"/>
                         <outlet property="nameLabel" destination="IVd-c8-uEG" id="MXH-Yu-Pcr"/>
                     </connections>
