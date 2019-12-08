@@ -10,6 +10,12 @@ import UIKit
 
 class InternViewController: UIViewController {
 
+    @IBOutlet weak var mainImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var choseBtn: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
