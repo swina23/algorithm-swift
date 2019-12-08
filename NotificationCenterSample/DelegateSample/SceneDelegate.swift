@@ -8,8 +8,6 @@
 
 import UIKit
 
-let lightNotificationKey = "co.seanallen.lightSide"
-let darkNotificationKey = "co.seanallen.darkSide"
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
