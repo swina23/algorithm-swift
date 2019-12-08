@@ -20,11 +20,12 @@ class BossVewControllerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-// Boss knows all the information what needs to be done knows how to do it.
-       
     }
     
+    
     @IBAction func imperialButtonTapped(_ sender: Any) {
+        // Boss make intern to imprement bellow method
+        // Boss knowd all information that Intern should do.
         bossDelegate.didTapChoise(image: UIImage(named: "vader")!, name: "Darth Vador", color: .red)
         
         dismiss(animated: true) {
@@ -33,6 +34,8 @@ class BossVewControllerViewController: UIViewController {
     }
     
     @IBAction func rebelButtonTapped(_ sender: Any) {
+        // Boss make intern to imprement bellow method
+        // Boss knowd all information that Intern should do.
         bossDelegate.didTapChoise(image: UIImage(named: "luke")!, name: "Luke Skywalker", color: .cyan)
         
         dismiss(animated: true) {
