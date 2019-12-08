@@ -28,8 +28,7 @@ class BossViewController: UIViewController {
         // Boss knowd all information that Intern should do.
 //        let vaderImage = UIImage(imageLiteralResourceName: "vader")
 //        bossDelegate.didTapChoice(image: vaderImage, name: "Darth Vader", color: .red)
-        bossDelegate.didTapChoice(image: UIImage(named: "vader")!, name: "Luke Skywalker", color: .cyan)
-        
+        bossDelegate.didTapChoice(image: UIImage(named: "vader")!, name: "Darth Vader", color: .red)
         dismiss(animated: true, completion: nil)
     }
     
@@ -37,7 +36,6 @@ class BossViewController: UIViewController {
         // Boss make intern to imprement bellow method
         // Boss knowd all information that Intern should do.
         bossDelegate.didTapChoice(image: UIImage(named: "luke")!, name: "Luke Skywalker", color: .cyan)
-        
         dismiss(animated: true, completion: nil)
     }
     
