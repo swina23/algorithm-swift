@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InternViewController: UIViewController,BossDelegate {
+class InternViewController: UIViewController {
     
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -22,10 +22,12 @@ class InternViewController: UIViewController,BossDelegate {
     
     @IBAction func chooseBtnTapped(_ sender: UIButton) {
         let bossVC = storyboard?.instantiateViewController(withIdentifier: "BossViewController") as! BossViewController
-        
         bossVC.bossDelegate = self
         present(bossVC, animated: true, completion: nil)
     }
+}
+
+extension InternViewController: BossDelegate {
     
     func didTapChoice(image: UIImage, name: String, color: UIColor) {
         self.mainImageView.image = image
@@ -37,6 +39,4 @@ class InternViewController: UIViewController,BossDelegate {
         
         view.backgroundColor = color
     }
-
 }
-
