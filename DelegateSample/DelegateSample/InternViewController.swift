@@ -20,20 +20,20 @@ class InternViewController: UIViewController,BossDelegate {
     }
     
     
-    @IBAction func chooseBtnTapped(_ sender: Any) {
+    @IBAction func chooseBtnTapped(_ sender: UIButton) {
         let bossVC = storyboard?.instantiateViewController(withIdentifier: "BossViewController") as! BossViewController
         
         bossVC.bossDelegate = self
         present(bossVC, animated: true, completion: nil)
     }
     
-    func didTapChoise(image: UIImage, name: String, color: UIColor) {
+    func didTapChoice(image: UIImage, name: String, color: UIColor) {
         self.mainImageView.image = image
         
         if name == "Luke Skywalker" {
             nameLabel.textColor = .black
         }
-        self.nameLabel.text = name
+        nameLabel.text = name
         
         view.backgroundColor = color
     }

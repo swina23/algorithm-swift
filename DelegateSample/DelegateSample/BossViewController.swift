@@ -10,7 +10,7 @@ import UIKit
 
 protocol BossDelegate {
     // protocol is essentially just list of functions.
-    func didTapChoise(image: UIImage,  name: String, color: UIColor)
+    func didTapChoice(image: UIImage,  name: String, color: UIColor)
 }
 
 class BossViewController: UIViewController {
@@ -23,26 +23,22 @@ class BossViewController: UIViewController {
     }
     
     
-    @IBAction func imperialButtonTapped(_ sender: Any) {
+    @IBAction func imperialButtonTapped(_ sender: UIButton) {
         // Boss make intern to imprement bellow method
         // Boss knowd all information that Intern should do.
-        let vaderImage = UIImage(imageLiteralResourceName: "vader")
-        bossDelegate.didTapChoise(image: vaderImage, name: "Darth Vader", color: .red)
+//        let vaderImage = UIImage(imageLiteralResourceName: "vader")
+//        bossDelegate.didTapChoice(image: vaderImage, name: "Darth Vader", color: .red)
+        bossDelegate.didTapChoice(image: UIImage(named: "vader")!, name: "Luke Skywalker", color: .cyan)
         
-        
-        dismiss(animated: true) {
-            print("pushed imperialBtn")
-        }
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func rebelButtonTapped(_ sender: Any) {
         // Boss make intern to imprement bellow method
         // Boss knowd all information that Intern should do.
-        bossDelegate.didTapChoise(image: UIImage(named: "luke")!, name: "Luke Skywalker", color: .cyan)
+        bossDelegate.didTapChoice(image: UIImage(named: "luke")!, name: "Luke Skywalker", color: .cyan)
         
-        dismiss(animated: true) {
-            print("pushed rebelBtn")
-        }
+        dismiss(animated: true, completion: nil)
     }
     
 }
