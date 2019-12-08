@@ -26,7 +26,9 @@ class BossViewController: UIViewController {
     @IBAction func imperialButtonTapped(_ sender: Any) {
         // Boss make intern to imprement bellow method
         // Boss knowd all information that Intern should do.
-        bossDelegate.didTapChoise(image: UIImage(named: "vader")!, name: "Darth Vador", color: .red)
+        let vaderImage = UIImage(imageLiteralResourceName: "vader")
+        bossDelegate.didTapChoise(image: vaderImage, name: "Darth Vader", color: .red)
+        
         
         dismiss(animated: true) {
             print("pushed imperialBtn")

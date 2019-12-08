@@ -23,7 +23,7 @@ class InternViewController: UIViewController,BossDelegate {
         let bossVC = storyboard?.instantiateViewController(withIdentifier: "BossViewController") as! BossViewController
         
 //        let bossVC = storyboard?.instantiateViewController(identifier: "BossViewController")
-        
+        bossVC.bossDelegate = self
         present(bossVC, animated: true, completion: nil)
     }
     
