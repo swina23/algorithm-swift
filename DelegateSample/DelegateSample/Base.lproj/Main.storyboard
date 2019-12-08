@@ -10,7 +10,7 @@
         <!--Intern View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="InternViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InternViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
         <!--Boss View Controller-->
         <scene sceneID="bE7-SL-2eH">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="7kk-cc-gnG" customClass="BossViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BossViewController" id="7kk-cc-gnG" customClass="BossViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AGn-W8-fzM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
