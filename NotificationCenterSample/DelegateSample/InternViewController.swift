@@ -38,6 +38,7 @@ class InternViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(InternViewController.updateCharacterImage(notification:)), name: light, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(InternViewController.updateNameLabel(notification:)), name: light, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(InternViewController.updateBackground(notification:)), name: light, object: nil)
+        
         // dark observer
         NotificationCenter.default.addObserver(self, selector: #selector(InternViewController.updateCharacterImage(notification:)), name: dark, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(InternViewController.updateNameLabel(notification:)), name: dark, object: nil)
@@ -61,9 +62,6 @@ class InternViewController: UIViewController {
         let color = isLight ? UIColor.cyan : UIColor.red
         view.backgroundColor = color
     }
-    
-    
-    
     
     @IBAction func chooseBtnTapped(_ sender: UIButton) {
         let bossVC = storyboard?.instantiateViewController(withIdentifier: "BossViewController") as! BossViewController
