@@ -10,7 +10,7 @@
         <!--Intern View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="InternViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="InternViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,13 +22,13 @@
                                     <constraint firstAttribute="height" constant="180" id="QA1-kX-it7"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVd-c8-uEG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVd-c8-uEG">
                                 <rect key="frame" x="20" y="319" width="374" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="LiE-Pb-6Bf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbA-Dy-rHN">
@@ -38,9 +38,12 @@
                                     <constraint firstAttribute="height" constant="110" id="bcY-y3-MO2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <state key="normal" title="Choose a side.">
+                                <state key="normal" title="Chose a side.">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="chooseBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L0h-l2-Lzp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,7 +61,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="choseBtn" destination="tbA-Dy-rHN" id="QHk-Y3-u3w"/>
                         <outlet property="mainImageView" destination="1oI-yI-7yA" id="O5W-1e-YYj"/>
                         <outlet property="nameLabel" destination="IVd-c8-uEG" id="MXH-Yu-Pcr"/>
                     </connections>
@@ -67,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="133" y="135"/>
         </scene>
-        <!--Boss Vew Controller View Controller-->
+        <!--Boss View Controller-->
         <scene sceneID="bE7-SL-2eH">
             <objects>
-                <viewController id="7kk-cc-gnG" customClass="BossVewControllerViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="7kk-cc-gnG" customClass="BossViewController" customModule="DelegateSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AGn-W8-fzM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

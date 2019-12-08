@@ -1,5 +1,5 @@
 //
-//  BossVewControllerViewController.swift
+//  BossViewController.swift
 //  DelegateSample
 //
 //  Created by hirose on 2019/12/03.
@@ -13,7 +13,7 @@ protocol BossDelegate {
     func didTapChoise(image: UIImage,  name: String, color: UIColor)
 }
 
-class BossVewControllerViewController: UIViewController {
+class BossViewController: UIViewController {
     
     // The variable gonna hold intern to speak to.
     var bossDelegate:BossDelegate!
